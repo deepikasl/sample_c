@@ -1,16 +1,24 @@
-language: c
+language: none
+env:
+   global: 
 
-compiler:
-  - gcc
-  - clang
+addons: 
 
-build:
-  pre_ci:
-    - echo 'true'
+infra:
+   pre_prov:
+      - echo 'true'
 
-  ci:
-    - ./configure && make && make install
-    - ./hello
+   prov:
+      - terraform apply   # default command for terraform
 
-  post_ci:
-    - echo "true6"
+   post_prov:
+      - ls -al
+
+   on_success: 
+   on_failure:
+
+integrations:
+   deply:
+   hub:
+   notifications:
+   key:
