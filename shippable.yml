@@ -2,6 +2,9 @@ language: none
 env:
    global: 
       - G1=foo
+gemfile:
+jdk:
+compiler:
  
 addons:
    firefox: "21.0"
