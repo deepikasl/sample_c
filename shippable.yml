@@ -2,7 +2,10 @@ language: none
 env:
    global: 
       - G1=foo
-
+      
+services:
+ - mongodb
+ 
 addons: 
 
 infra:
