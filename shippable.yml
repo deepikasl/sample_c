@@ -2,8 +2,7 @@ language: none
 env:
    global: 
       - G1=foo
-   matrix:
-      - G2=foo2
+
 addons:
    firefox: "21.0"
 
