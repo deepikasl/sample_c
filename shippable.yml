@@ -3,10 +3,12 @@ env:
    global: 
       - G1=foo
       
-services:
- - mongodb
+matrix:
+  exclude:
+    - rvm: 1.9.2
  
-addons: 
+addons:
+   firefox: "21.0"
 
 infra:
    pre_prov:
