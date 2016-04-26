@@ -2,10 +2,6 @@ language: none
 env:
    global: 
       - G1=foo
-      
-matrix:
-  exclude:
-    - rvm: 1.9.2
  
 addons:
    firefox: "21.0"
@@ -13,9 +9,6 @@ addons:
 infra:
    pre_prov:
       - echo 'true'
-
-   prov:
-      - terraform apply   # default command for terraform
 
    post_prov:
       - ls -al
