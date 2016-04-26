@@ -1,6 +1,7 @@
 language: none
 env:
    global: 
+      - G1=foo
 
 addons: 
 
@@ -13,12 +14,3 @@ infra:
 
    post_prov:
       - ls -al
-
-   on_success: 
-   on_failure:
-
-integrations:
-   deply:
-   hub:
-   notifications:
-   key:
