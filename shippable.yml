@@ -35,11 +35,11 @@ integrations:
         - FOO=BAR
         - FIZZ=BUZZ
         
-  deploy:
-    - integrationName: aws-deploy-int
-      type: aws
-      target: eb_paas
-      platform: "Node.js"
-      application_name: sample-node-eb-paas-app
-      env_name: sample-node-eb-paas-env
-      region: us-east-1
+  # deploy:
+  #   - integrationName: aws-deploy-int
+  #     type: aws
+  #     target: eb_paas
+  #     platform: "Node.js"
+  #     application_name: sample-node-eb-paas-app
+  #     env_name: sample-node-eb-paas-env
+  #     region: us-east-1
