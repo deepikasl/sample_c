@@ -26,14 +26,14 @@ integrations:
       on_start: always
       on_pull_request: never
       
-    - integrationName: webhook-int
-      type: webhook
-      payload:
-        - isPRBuild=$IS_PULL_REQUEST
-        - branchName=$BRANCH
-        - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
-        - FOO=BAR
-        - FIZZ=BUZZ
+    # - integrationName: webhook-int
+    #   type: webhook
+    #   payload:
+    #     - isPRBuild=$IS_PULL_REQUEST
+    #     - branchName=$BRANCH
+    #     - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
+    #     - FOO=BAR
+    #     - FIZZ=BUZZ
         
   # deploy:
   #   - integrationName: aws-deploy-int
