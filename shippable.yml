@@ -17,7 +17,7 @@ build:
 
 integrations:
   notifications:
-    - integrationName: deepika-slac
+    - integrationName: deepika-slack
       type: slack
       recipients:
       - "#deepika-test"
