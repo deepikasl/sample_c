@@ -7,7 +7,9 @@ compiler:
 env:
   global:
     - single=env1
-    - test=env2
+    - IMAGE_TAG=latest.40
+    - TEST=FOO
+    - REGISTRY_URL=quay.io
 
 build:
   pre_ci:
