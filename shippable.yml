@@ -8,8 +8,6 @@ env:
   global:
     - single=env1
     - test=env2
-    - testing=env3
-    - check=length
 
 build:
   pre_ci:
