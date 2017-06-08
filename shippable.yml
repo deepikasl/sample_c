@@ -4,6 +4,10 @@ compiler:
   - gcc
   - clang
 
+env:
+  global:
+    - single=env1
+
 build:
   pre_ci:
     - echo 'true'
